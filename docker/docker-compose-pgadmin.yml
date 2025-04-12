@@ -10,6 +10,8 @@ services:
       - postgres 
     ports:
       - "8000:80"
+    volumes:
+      - ./pgadmin-servers.json:/pgadmin4/servers.json
     networks:
       - data-network
     env_file:
