@@ -30,7 +30,8 @@ services:
     ports:
       - "5434:5432"
     volumes:
-       - ../sql:/sql
+       - ../sql-1:/sql-1
+       - ../sql-2:/sql-2
        - ../data:/data
     networks:
       - data-network
